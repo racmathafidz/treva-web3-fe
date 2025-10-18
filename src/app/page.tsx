@@ -103,9 +103,7 @@ export default function Home() {
               </div>
 
               <div className="space-y-2">
-                <label className="text-sm text-gray-300">
-                  Amount (mock USD)
-                </label>
+                <label className="text-sm text-gray-300">Amount (ETH)</label>
                 <Input
                   type="number"
                   name="amountUsd"
