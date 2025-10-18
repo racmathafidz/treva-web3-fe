@@ -23,7 +23,7 @@ import {
 
 export default function Home() {
   const [form, setForm] = useState({
-    healthFactor: "2.0",
+    healthFactor: "",
     amountUsd: "",
     walletAddress: "",
     expDate: "",
@@ -95,6 +95,7 @@ export default function Home() {
                   type="number"
                   step="0.1"
                   name="healthFactor"
+                  placeholder="2,0"
                   value={form.healthFactor}
                   onChange={onChange}
                   className="bg-slate-900 border-emerald-700 text-white"
@@ -108,7 +109,7 @@ export default function Home() {
                 <Input
                   type="number"
                   name="amountUsd"
-                  placeholder="e.g. 100"
+                  placeholder="100"
                   value={form.amountUsd}
                   onChange={onChange}
                   className="bg-slate-900 border-emerald-700 text-white"
